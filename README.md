@@ -2,7 +2,7 @@
 
 # ExplainCanvas
 
-Draw, speak, and get AI feedback on your system architecture designs in real-time.
+Draw, speak, and get AI feedback on your designs in real-time.
 
 ## Quick Start
 
