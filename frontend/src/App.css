@@ -1,0 +1,119 @@
+/* VSCode Dark Theme Colors */
+:root {
+  --vscode-bg: #1e1e1e;
+  --vscode-fg: #cccccc;
+  --vscode-titlebar: #323233;
+  --vscode-editor: #1e1e1e;
+  --vscode-sidebar: #252526;
+  --vscode-border: #3e3e42;
+  --vscode-hover: #2a2d2e;
+  --vscode-button: #0e639c;
+  --vscode-button-hover: #1177bb;
+  --vscode-accent: #007acc;
+  --vscode-input-bg: #3c3c3c;
+  --vscode-input-border: #3e3e42;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--vscode-bg);
+}
+
+.app-header {
+  background: var(--vscode-titlebar);
+  color: var(--vscode-fg);
+  padding: 15px 30px;
+  border-bottom: 1px solid var(--vscode-border);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.app-header p {
+  margin: 3px 0 0 0;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.app-content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.left-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--vscode-editor);
+  border-right: 1px solid var(--vscode-border);
+}
+
+.right-panel {
+  flex: 0 0 auto;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  background: var(--vscode-sidebar);
+}
+
+.canvas-container {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  background: var(--vscode-editor);
+}
+
+/* VSCode-style classes */
+.bg-vscode-bg {
+  background-color: var(--vscode-bg);
+}
+
+.bg-vscode-titlebar {
+  background-color: var(--vscode-titlebar);
+}
+
+.bg-vscode-editor {
+  background-color: var(--vscode-editor);
+}
+
+.bg-vscode-sidebar {
+  background-color: var(--vscode-sidebar);
+}
+
+.text-vscode-fg {
+  color: var(--vscode-fg);
+}
+
+.border-vscode-border {
+  border-color: var(--vscode-border);
+}
+
+.bg-vscode-hover:hover {
+  background-color: var(--vscode-hover);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .right-panel {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-content {
+    flex-direction: column;
+  }
+  
+  .left-panel,
+  .right-panel {
+    flex: 1;
+    width: 100%;
+  }
+}
+
